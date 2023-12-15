@@ -6,37 +6,29 @@
 
 /* reset */
 
-main{
-    width: 100%;
-    height: 100vh;
 
-    padding-top: 60px;
-
-    background-color: black;
-}
-
-main .view{
+.view{
     display: flex;
     justify-content: flex-end;
     gap: 5px;
-    position: absolute;
-    top: 5px;
-    right: 5px;
-
+    position: fixed;
+    top: 0;
+    left: 0;
+    
     padding: 3px 2px;
-
+    
     
     color: white;
 }
 
 .speaker-view, .enlarge{
-
+    
     height: 35px;
     background-color: gray;
-
+    
 }
 
-main .view .speaker-view .material-icons{
+.view .speaker-view .material-icons{
     padding-top: 5px;
 
 }
@@ -58,14 +50,33 @@ main .view .speaker-view .material-icons{
 
 /* inizio container immagini */
 
+main{
+width: 100%;
+    height: 100vh;
+
+    padding-top: 60px;
+    padding-bottom: 100px;
+
+    overflow-y: auto;
+
+    
+
+
+    background-color: black;
+}
+
+
 main .container{
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     flex-wrap: wrap;
     gap: 3px;
-    max-width: 1200px;
+    max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
+
+    
     
 
     /* border: 2px solid white; */
@@ -73,7 +84,10 @@ main .container{
 
 main .container .users{
     position: relative;
-    width: calc(100% / 7 - 3px * 7 / 6);
+    min-width: calc(100% / 7 - 3px * 7 / 6);
+
+    margin-bottom: 10px;
+    
 
     color: white;
 
@@ -109,11 +123,18 @@ nav{
     z-index: 1;
 
     width: 100%;
-    height: 100px;
+    height: 50px;
     /* test */
-    padding-bottom: 8px;
+    /* padding-bottom: 8px; */
     background-color: #222222;
     color: white;
 
+}
+
+nav .toolbar{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
