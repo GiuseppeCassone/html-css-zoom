@@ -28,16 +28,18 @@
     
 }
 
-.view .speaker-view .material-icons{
-    padding-top: 5px;
+.speaker-view{
+    padding: 0px 3px;
+    padding-top: 8px;
 
+    border-radius: 5px;
 }
+
 
 .speaker{
     display: inline-block;
     height: 100%;
-    text-align: center;
-    line-height: 12px;
+    font-size: 14px;
 }
 
 .enlarge{
@@ -103,8 +105,10 @@ main .container .users{
 
 .users .name{
     position: absolute;
-    bottom: 0;
+    bottom: 2px;
     left: 0;
+
+    padding: 5px 2px;
 
     background-color: rgba(0, 0, 0, 0.3);
 
@@ -136,5 +140,6 @@ nav .toolbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
