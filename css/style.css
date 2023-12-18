@@ -66,7 +66,7 @@ nav{
 /* inizio container immagini */
 
 main{
-width: 100%;
+    width: 100%;
     height: 100vh;
 
     padding-top: 70px;
@@ -83,10 +83,10 @@ width: 100%;
 
 main .container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    gap: 3px;
+    gap: 5px 3px;
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
@@ -101,7 +101,7 @@ main .container .users{
     position: relative;
     min-width: calc(100% / 7 - 3px * 7 / 6);
 
-    margin-bottom: 10px;
+    /* margin-bottom: 5px; */
     
 
     color: white;
